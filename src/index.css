@@ -1,0 +1,53 @@
+:root {
+  --columns: 6;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  transition: display 0.5s ease;
+}
+
+.notes {
+  padding:0px 25px 0px 25px;
+  display: grid;
+  grid-gap: 10px;
+  /* Adjusting for the 10px grid-gap as well */
+  grid-template-columns: repeat(5,1fr);
+}
+@media (max-width:500px) {
+  .notes{
+    width:100%;
+    display: grid;place-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    /* Adjusting for the 10px grid-gap as well */
+    grid-template-columns: 1fr;
+  }
+  .form{
+    height:160px;
+    width:270px;
+  }
+  .form button{
+    left:210px;
+    top:55px;
+  }
+  .form textarea{
+    width:250px;
+  }
+  .header{
+    height:55px;
+  }
+  .header p {
+    font-size: 24px;
+  }
+  .header img{
+   
+    margin-right: 5px;
+    height:30px;
+    width:30px;
+  }
+  .text{
+    width:260px;
+    height:45px;
+  }
+}
