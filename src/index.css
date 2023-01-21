@@ -9,19 +9,14 @@
 .notes {
   padding:0px 25px 0px 25px;
   display: grid;
-  grid-gap: 10px;
+  place-items: center; 
   /* Adjusting for the 10px grid-gap as well */
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
 }
+
 @media (max-width:500px) {
   .notes{
-    width:100%;
-    display: grid;place-items: center;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    /* Adjusting for the 10px grid-gap as well */
-    grid-template-columns: 1fr;
+     margin-left: 20px;
   }
   .form{
     height:160px;
@@ -40,8 +35,7 @@
   .header p {
     font-size: 24px;
   }
-  .header img{
-   
+  .header img{  
     margin-right: 5px;
     height:30px;
     width:30px;

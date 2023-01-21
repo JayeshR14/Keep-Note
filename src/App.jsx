@@ -30,7 +30,7 @@ const App = () => {
  console.log(currentState);
    return( <>
     <Header/>
-    <div className="h-36 flex justify-center mt-6 mb-8 max-w-full">
+    <div className="h-auto flex justify-center mt-6 mb-8 max-w-full">
     {!currentState ?
      <Text
        state = {setCurrentState} /> 
@@ -54,7 +54,7 @@ const App = () => {
      })
      }
      </div>
-     <Footer/>
+     {/* <Footer/> */}
      </>
    )
 }
